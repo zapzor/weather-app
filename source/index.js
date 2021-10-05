@@ -1,2 +1,4 @@
 import './style.css';
-import getWeather from './api';
+import api from './api';
+
+api.getWeather();
