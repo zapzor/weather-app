@@ -1,5 +1,5 @@
 import 'regenerator-runtime/runtime';
-import { weatherInfo, cityName } from './dom-stuff';
+import dom from './dom-stuff';
 
 const api = (() => {
   async function getWeather(input = 'London') {
@@ -8,8 +8,7 @@ const api = (() => {
     );
     const weatherData = await response.json();
 
-    cityName.textContent = weatherData.name;
-    weatherInfo.textContent = weatherData.weather[0].main;
+    dom(weatherData);
   }
   return { getWeather };
 })();

@@ -1,4 +1,4 @@
 import './style.css';
-import api from './api';
+import api from './modules/api';
 
 api.getWeather();
