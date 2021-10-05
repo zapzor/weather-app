@@ -8,7 +8,7 @@ module.exports = {
 
   entry: ['regenerator-runtime/runtime.js', './source/index.js'],
   output: {
-    filename: 'bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'public'),
     clean: true,
   },
